@@ -3,8 +3,8 @@
 #include <string.h>
 #include <ctype.h>
 
-int validation(string key);
-int substitution(string text, string key);
+bool validation(string key);
+void substitution(string text, string key);
 
 int main(int argc, string argv[])
 {
@@ -23,7 +23,7 @@ int main(int argc, string argv[])
     }
     return 1;
 }
-int validation(string key)//função validação
+bool validation(string key)//função validação
 {
     int len = strlen(key);
 
@@ -56,7 +56,7 @@ int validation(string key)//função validação
     }
     return true;
 }
-int substitution(string text, string key)
+void substitution(string text, string key)
 {
     printf("ciphertext:");
     for (int i = 0, n = strlen(text); i < n; i++)//percorre o texto
@@ -83,5 +83,4 @@ int substitution(string text, string key)
         }
     }
     printf("\n");
-    return 1;
 }
