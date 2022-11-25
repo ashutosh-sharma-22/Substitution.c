@@ -9,7 +9,7 @@ void substitution(string text, string key);
 int main(int argc, string argv[])
 {
 
-    if (argc != 2)//aceita apenas um argumento
+    if (argc != 2)//accepting the argument
     {
         printf("one arg\n");
         return 1;
@@ -23,7 +23,7 @@ int main(int argc, string argv[])
     }
     return 1;
 }
-bool validation(string key)//função validação
+bool validation(string key)//fuction for validating the key
 {
     int len = strlen(key);
 
